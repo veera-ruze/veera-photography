@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Veera Ruže Photography — portraits, stories and travel." />
+  <title>Veera Ruže Photography</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home">VEERA RUŽE <span>PHOTOGRAPHY</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu">☰</button>
+    <nav id="site-nav" aria-label="Main navigation">
+      <a href="#portfolio">Portfolio</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <p class="eyebrow">Moments • Places • People</p>
+        <h1>Stories told<br /><em>through light.</em></h1>
+        <p>Portrait, creative and travel photography by Veera Ruže.</p>
+        <a class="button" href="#portfolio">Explore portfolio <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+    <section class="section portfolio" id="portfolio">
+      <div class="section-heading"><p class="eyebrow">Selected work</p><h2>Portfolio</h2><p>Explore photographs by category. Use the arrows to browse.</p></div>
+      <div class="tabs" role="group" aria-label="Portfolio category">
+        <button class="tab active" data-category="all" aria-pressed="true">All</button>
+        <button class="tab" data-category="portraits" aria-pressed="false">Portraits</button>
+        <button class="tab" data-category="creative" aria-pressed="false">Creative</button>
+        <button class="tab" data-category="travel" aria-pressed="false">Travel</button>
+      </div>
+      <div class="gallery-shell">
+        <button class="gallery-arrow prev" aria-label="Previous photograph">‹</button>
+        <figure class="gallery-frame"><img id="gallery-image" alt="" /><figcaption><span id="gallery-caption"></span><span id="gallery-counter"></span></figcaption></figure>
+        <button class="gallery-arrow next" aria-label="Next photograph">›</button>
+      </div>
+      <div class="gallery-thumbs" id="gallery-thumbs" aria-label="Select photograph"></div>
+      <p class="gallery-note">Gallery currently uses sample photographs. Replace them with your own images in <code>script.js</code>.</p>
+    </section>
+    <section class="section about" id="about">
+      <p class="eyebrow">Behind the lens</p><h2>About Veera</h2>
+      <p>I capture the details that make a moment memorable — the atmosphere of a place, the character of a person, and the stories that unfold between them.</p>
+    </section>
+    <section class="section contact" id="contact">
+      <p class="eyebrow">Let's create something</p><h2>Have a story to tell?</h2>
+      <p>For collaborations, portraits and photography enquiries, reach out to me.</p>
+      <a class="button" href="mailto:hello@example.com?subject=Photography%20enquiry">Get in touch ↗</a>
+      <p class="small">Update the example email address before publishing.</p>
+    </section>
+  </main>
+  <footer>© <span id="year"></span> Veera Ruže Photography. All rights reserved.</footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
